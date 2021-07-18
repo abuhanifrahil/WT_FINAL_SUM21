@@ -3,7 +3,7 @@
 $db_server="localhost";
 $db_username="root";
 $db_pass="";
-$db_name="project";
+$db_name="students";
 
 function execute($query){
 	global $db_server,$db_username,$db_pass,$db_name;

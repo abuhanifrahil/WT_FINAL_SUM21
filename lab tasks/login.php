@@ -23,8 +23,5 @@ include 'controllers/users_controllers.php';
 <div class="form-group text-center">
 <input type="submit" name="btn_login" class="btn btn-danger" value="login" class="form-control">
 </div>
-<div class="form-group text-center">
-<a href="signup.php">Not Registered Yet? please sign up</a>
-</div>
 </form>
 </div>
