@@ -12,7 +12,7 @@ $dept_id="";
 $err_dept_id="";
 $dept_name="";
 $err_dept_name=""
-$err_db="";
+//$err_db="";
 $hasError=false;
 if(isset($_POST["Addstudent"])){
 	
@@ -63,7 +63,7 @@ if(isset($_POST["Addstudent"])){
 	if($rs=== true){
 		header("Location: Allstudent.php");
 	}
-	$err_db = $rs;
+	//$err_db = $rs;
 	
 }
 }
@@ -71,5 +71,8 @@ function insertstudent($name,$dob,$credit,$cgpa,$dept_id,$dept_name){
 	$query = "insert into student values (NULL,'$name','$dob','$cgpa','$dept_id','$dept_name')";
 	return execute($query);
 }
+function updatestudent($credit,$cgpa,$dept_id,$dept_name){
+	$query = "update into student values (NULL,'$dob','$cgpa','$dept_id','$dept_name')";
+	return execute($query);
 ?>
 
